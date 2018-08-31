@@ -17,45 +17,48 @@ module.exports = {
     // [tslint]
     // [tslint] - configure
     'align': [true, 'arguments', 'statements', 'members', 'elements'],
-
-    'prefer-method-signature': false,
+    'prefer-method-signature': true,
     'quotemark': [true, 'single', 'jsx-double'],
     'strict-boolean-expressions': [
-      true, 'allow-null-union', 'allow-undefined-union', 'allow-string'
+      true, 'allow-undefined-union',
     ],
     'trailing-comma': [
       true, {
         'multiline': 'always',
         'singleline': 'never',
         // Disallowes ',' after rest parameters
-        'esSpecCompliant': true
-      }
+        'esSpecCompliant': true,
+      },
     ],
     'typedef': [
       true,
       'call-signature',
       'arrow-call-signature',
       'parameter',
-      // 'arrow-parameter',
+      // 'arrow-parameter', // use the inferred types
+      // 'variable-declaration', // use the inferred types
+      'member-variable-declaration',
       'property-declaration',
-      // 'variable-declaration',
-      'member-variable-declaration'
     ],
 
     // ================================================
     // [tslint-microsoft-contrib]
     // [tslint-microsoft-contrib] - deactivate
-    'export-name': false,
-    'import-name': false,
     'no-relative-imports': false,
     'missing-jsdoc': false,
 
     // [tslint-microsoft-contrib] - configure
+    'export-name': true,
+    'import-name': [
+      true, {
+        'reactFontawesome': 'FontAwesomeIcon',
+      },
+    ],
     'function-name': [
       true, {
         // override that static methods should start upper case
-        'static-method-regex': '^[a-z][\\w\\d]+$'
-      }
+        'static-method-regex': '^[a-z][\\w\\d]+$',
+      },
     ],
     'react-tsx-curly-spacing': [true, 'never', { 'allowMultiline': true }],
     'react-unused-props-and-state': true,
@@ -72,6 +75,6 @@ module.exports = {
     'jsx-no-string-ref': true,
     'jsx-self-close': true,
     'jsx-space-before-trailing-slash': true,
-    'jsx-wrap-multiline': true
-  }
+    'jsx-wrap-multiline': true,
+  },
 };
