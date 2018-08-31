@@ -1,10 +1,6 @@
 /coverage
 /node_modules
 /build
-/node
-/target
 build/index.js
 npm-debug.log
 yarn-error.log
-.classpath
-.project
