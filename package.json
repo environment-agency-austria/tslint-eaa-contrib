@@ -1,0 +1,33 @@
+{
+  "name": "tslint-eaa-contrib",
+  "version": "0.0.0",
+  "description": "TSLint rules for EAA projects",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/environment-agency-austria/tslint-eaa-contrib.git"
+  },
+  "keywords": [
+    "tslint",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/environment-agency-austria/tslint-eaa-contrib/issues"
+  },
+  "homepage": "https://github.com/environment-agency-austria/tslint-eaa-contrib#readme",
+  "dependencies": {
+    "tslint-microsoft-contrib": "^5.2.1",
+    "tslint-react": "^3.6.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "peerDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.0"
+  }
+}
