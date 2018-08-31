@@ -1,0 +1,7 @@
+{
+  "extends": "oceanjs",
+
+  "rules": {
+    "quote-props": 0
+  }
+}
