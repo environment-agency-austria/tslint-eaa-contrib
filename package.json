@@ -17,7 +17,7 @@
     "typescript",
     "styleguide"
   ],
-  "author": "",
+  "author": "Christoph Kappler <christoph.kappler@umweltbundesamt.at>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/environment-agency-austria/tslint-eaa-contrib/issues"
