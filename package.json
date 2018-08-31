@@ -1,6 +1,6 @@
 {
   "name": "tslint-eaa-contrib",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TSLint rules for EAA projects",
   "main": "index.js",
   "scripts": {
