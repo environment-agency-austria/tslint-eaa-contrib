@@ -46,6 +46,9 @@ module.exports = {
     // [tslint-microsoft-contrib] - deactivate
     'no-relative-imports': false,
     'missing-jsdoc': false,
+    'mocha-avoid-only': false,
+    'mocha-no-side-effect-code': false,
+    'mocha-unneeded-done': false,
 
     // [tslint-microsoft-contrib] - configure
     'export-name': true,
