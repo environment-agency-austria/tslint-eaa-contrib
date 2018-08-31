@@ -5,10 +5,10 @@
 ## Installation
 
 ```shell
-npm install tslint-eaa-contrib --save-dev
+npm i tslint-eaa-contrib --save-dev
 ```
 
 ## Usage
-The rules can be added to your configuration by using the extends feature for tslint. Just add "extends": "tslint-eaa-contrib" to your configuration.
+The rules can be added to your configuration by using the extends feature for tslint. Just add `"extends": "tslint-eaa-contrib"` to your configuration.
 
-Note: Some of the enabled rules require the --type-check and --project TSLint options.
+Note: Some of the enabled rules require the `--type-check` and `--project` TSLint options.
