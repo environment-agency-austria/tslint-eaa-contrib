@@ -14,7 +14,7 @@ const tslintRules = {
   'prefer-method-signature': true,
   'quotemark': [true, 'single', 'jsx-double'],
   'strict-boolean-expressions': [
-    true, 'allow-undefined-union',
+    true, 'allow-undefined-union', 'allow-string'
   ],
   'trailing-comma': [
     true, {
