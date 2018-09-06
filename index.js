@@ -14,7 +14,7 @@ const tslintRules = {
   'prefer-method-signature': true,
   'quotemark': [true, 'single', 'jsx-double'],
   'strict-boolean-expressions': [
-    true, 'allow-undefined-union',
+    true, 'allow-undefined-union', 'allow-string'
   ],
   'trailing-comma': [
     true, {
@@ -89,8 +89,9 @@ const tslintConsistentCodestyle = {
     { 'type': 'variable', 'modifiers': ['global', 'const'], 'format': ['camelCase', 'UPPER_CASE'] },
     // override the above format option for exported constants to allow only PascalCase
     { 'type': 'variable', 'modifiers': ['export', 'const'], 'format': 'PascalCase' },
-    // require exported constant variables that are initialized with functions to be PascalCase
+    // require constant function variables to be PascalCase when they are exported or end with 'SFC'
     { 'type': 'functionVariable', 'modifiers': ['export', 'const'], 'format': 'PascalCase' },
+    { 'type': 'functionVariable', 'modifiers': ['const'], 'format': 'PascalCase', 'filter': 'SFC$' }, // (stateless components)
     // Except for and HOCs - they should be camelCase (they start with the prefix 'with')
     { 'type': 'functionVariable', 'modifiers': ['export', 'const'], 'format': 'camelCase', 'filter': '^with' },
     // This rule usually applies for any HOC that has a parameter with the suffix 'Component' passed.
