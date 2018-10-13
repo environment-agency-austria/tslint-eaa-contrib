@@ -1,5 +1,7 @@
 # tslint-eaa-contrib
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/environment-agency-austria/tslint-eaa-contrib.svg)](https://greenkeeper.io/)
+
 [TSLint](https://github.com/palantir/tslint) rules for EAA projects.
 
 ## Installation
