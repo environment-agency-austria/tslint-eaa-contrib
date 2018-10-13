@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/environment-agency-austria/tslint-eaa-contrib#readme",
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.4.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-oceanjs": "^0.1.0",
