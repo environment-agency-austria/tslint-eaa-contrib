@@ -14,7 +14,7 @@ const tslintRules = {
   'prefer-method-signature': true,
   'quotemark': [true, 'single', 'jsx-double'],
   'strict-boolean-expressions': [
-    true, 'allow-undefined-union', 'allow-string'
+    true, 'allow-undefined-union', 'allow-string', 'allow-boolean-or-undefined'
   ],
   'trailing-comma': [
     true, {
@@ -55,12 +55,14 @@ const tslintMicrosoftContribRules = {
   ],
   'react-tsx-curly-spacing': [true, 'never', { 'allowMultiline': true }],
   'react-unused-props-and-state': true,
+  "react-this-binding-issue": [ true, { 'allow-anonymous-listeners': true } ],
 };
 // ================================================
 // [tslint-react]
 const tslintReact = {
   // [tslint-react] - deactivate
   'jsx-no-multiline-js': false, // see: react-tsx-curly-spacing
+  'jsx-no-lambda': false, // see: react-this-binding-issue
 
   // [tslint-react] - configure
   'jsx-boolean-value': [true, 'never'],
@@ -92,6 +94,7 @@ const tslintConsistentCodestyle = {
     // require constant function variables to be PascalCase when they are exported or end with 'SFC'
     { 'type': 'functionVariable', 'modifiers': ['export', 'const'], 'format': 'PascalCase' },
     { 'type': 'functionVariable', 'modifiers': ['const'], 'format': 'PascalCase', 'filter': 'SFC$' }, // (stateless components)
+    { 'type': 'functionVariable', 'modifiers': ['const'], 'format': 'PascalCase', 'filter': '^Base[A-Z]+' }, // (stateless components)
     // Except for and HOCs - they should be camelCase (they start with the prefix 'with')
     { 'type': 'functionVariable', 'modifiers': ['export', 'const'], 'format': 'camelCase', 'filter': '^with' },
     // This rule usually applies for any HOC that has a parameter with the suffix 'Component' passed.
