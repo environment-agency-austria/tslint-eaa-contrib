@@ -34,6 +34,13 @@ const tslintRules = {
     'member-variable-declaration',
     'property-declaration',
   ],
+  'no-implicit-dependencies': [
+    true,
+    [
+      'enzyme', // enzyme related dependencies are only used in unit tests
+      'enzyme-adapter-react-16'
+    ],
+  ],
 };
 // ================================================
 // [tslint-microsoft-contrib]
