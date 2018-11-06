@@ -14,7 +14,7 @@ const tslintRules = {
   'prefer-method-signature': true,
   'quotemark': [true, 'single', 'jsx-double'],
   'strict-boolean-expressions': [
-    true, 'allow-undefined-union', 'allow-string', 'allow-boolean-or-undefined'
+    true, 'allow-undefined-union', 'allow-string', 'allow-boolean-or-undefined',
   ],
   'trailing-comma': [
     true, {
@@ -38,7 +38,7 @@ const tslintRules = {
     true,
     [
       'enzyme', // enzyme related dependencies are only used in unit tests
-      'enzyme-adapter-react-16'
+      'enzyme-adapter-react-16',
     ],
   ],
 };
@@ -62,7 +62,10 @@ const tslintMicrosoftContribRules = {
   ],
   'react-tsx-curly-spacing': [true, 'never', { 'allowMultiline': true }],
   'react-unused-props-and-state': true,
-  "react-this-binding-issue": [ true, { 'allow-anonymous-listeners': true } ],
+  'react-this-binding-issue': [true, { 'allow-anonymous-listeners': true }],
+  'no-suspicious-comment': {
+    'severity': 'warning',
+  },
 };
 // ================================================
 // [tslint-react]
@@ -86,13 +89,14 @@ const tslintConsistentCodestyle = {
   // [tslint-consistent-codestyle] - configure
   'early-exit': [
     true, {
-      'max-length': 4
-    }
+      'max-length': 4,
+    },
   ],
-  "naming-convention": [
+  'naming-convention': [
     true,
-    // forbid leading and trailing underscores and enforce camelCase on EVERY name. will be overridden by subtypes if needed
-    { 'type': 'default', 'format': 'camelCase', 'leadingUnderscore': 'forbid', 'trailingUnderscore': 'forbid'},
+    // forbid leading and trailing underscores and enforce camelCase on EVERY name.
+    // will be overridden by subtypes if needed
+    { 'type': 'default', 'format': 'camelCase', 'leadingUnderscore': 'forbid', 'trailingUnderscore': 'forbid' },
     // require all global constants to be camelCase or UPPER_CASE
     // all other variables and functions still need to be camelCase
     { 'type': 'variable', 'modifiers': ['global', 'const'], 'format': ['camelCase', 'UPPER_CASE'] },
@@ -104,14 +108,15 @@ const tslintConsistentCodestyle = {
     { 'type': 'functionVariable', 'modifiers': ['const'], 'format': 'PascalCase', 'filter': '^Base[A-Z]+' }, // (stateless components)
     // Except for and HOCs - they should be camelCase (they start with the prefix 'with')
     { 'type': 'functionVariable', 'modifiers': ['export', 'const'], 'format': 'camelCase', 'filter': '^with' },
-    // This rule usually applies for any HOC that has a parameter with the suffix 'Component' passed.
-    // Since this parameter describes a type, we want to enforce PascalCase
+    // This rule usually applies for any HOC that has a parameter with the suffix 'Component'
+    // passed. Since this parameter describes a type, we want to enforce PascalCase
     { 'type': 'parameter', 'format': 'PascalCase', 'filter': '^(Wrapped)?Component$' },
     // exclicitly disable the format check only for method toJSON
     { 'type': 'method', 'filter': '^toJSON$', 'format': null },
     // enforce UPPER_CASE for all public static readonly(!) properties
-    { 'type': 'property', 'modifiers': ['public', 'static', 'const'], 'format': 'UPPER_CASE'},
-    // enforce PascalCase for classes, interfaces, enums, etc. Remember, there are still no underscores allowed.
+    { 'type': 'property', 'modifiers': ['public', 'static', 'const'], 'format': 'UPPER_CASE' },
+    // enforce PascalCase for classes, interfaces, enums, etc. Remember, there are still no
+    // underscores allowed.
     { 'type': 'type', 'format': 'PascalCase' },
     // Enforce prefix 'Abstract' for abstract classes
     { 'type': 'class', 'modifiers': 'abstract', 'prefix': 'Abstract' },
@@ -120,7 +125,7 @@ const tslintConsistentCodestyle = {
     // generic type parameters must start with 'T' or 'U'
     { 'type': 'genericTypeParameter', 'regex': '^[TU].*$' },
     // Override 'public static const' format here with PascalCase
-    { 'type': 'enumMember', 'format': 'PascalCase'}
+    { 'type': 'enumMember', 'format': 'PascalCase' },
   ],
   'no-accessor-recursion': true,
   'no-collapsible-if': true,
@@ -141,11 +146,11 @@ module.exports = {
 
   defaultSeverity: 'error',
 
-  rulesDirectory: ["tslint-consistent-codestyle"],
+  rulesDirectory: ['tslint-consistent-codestyle'],
   rules: {
     ...tslintRules,
     ...tslintMicrosoftContribRules,
     ...tslintReact,
-    ...tslintConsistentCodestyle
+    ...tslintConsistentCodestyle,
   },
 };
