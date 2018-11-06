@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 0.1.3 - 2018-11-06
+* Added `enzyme` and `enzyme-adapter-react-16` to allowed implicit dependencies
+* Made rule `no-suspicious-comment` a warning instead of an error by default
+
 ## 0.1.2 - 2018-09-06
 * Added tslint-consistent-codestyle as peer dependency
 * Fixed naming convention for React related names
