@@ -63,6 +63,9 @@ const tslintMicrosoftContribRules = {
   'react-tsx-curly-spacing': [true, 'never', { 'allowMultiline': true }],
   'react-unused-props-and-state': true,
   'react-this-binding-issue': [true, { 'allow-anonymous-listeners': true }],
+  'no-suspicious-comment': {
+    'severity': 'warning',
+  },
 };
 // ================================================
 // [tslint-react]
