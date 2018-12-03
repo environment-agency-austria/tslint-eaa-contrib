@@ -8,6 +8,8 @@
 const tslintRules = {
   // [tslint] - deactivate
   'variable-name': false, // see [tslint-consistent-codestyle].naming-convention
+  'newline-per-chained-call': false,
+  'no-null-keyword': false,
   // [tslint] - configure
   'align': [true, 'arguments', 'statements', 'members', 'elements'],
   'no-unused-expression': [true, 'allow-fast-null-checks'],
