@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## Unreleased changes
+* deactivated rules:
+  * `prefer-readonly`
+
 ## 0.1.4 - 2018-12-03
 * update to `tslint-microsoft-contrib` 6.0.0
 * deactivated rules:

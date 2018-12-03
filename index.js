@@ -9,12 +9,12 @@ const tslintRules = {
   // [tslint] - deactivate
   'variable-name': false, // see [tslint-consistent-codestyle].naming-convention
   'newline-per-chained-call': false,
+  'prefer-readonly': false,
   'no-null-keyword': false,
   // [tslint] - configure
   'align': [true, 'arguments', 'statements', 'members', 'elements'],
   'no-unused-expression': [true, 'allow-fast-null-checks'],
   'prefer-method-signature': true,
-  'prefer-readonly': [true, 'only-inline-lambdas'],
   'quotemark': [true, 'single', 'jsx-double'],
   'strict-boolean-expressions': [
     true, 'allow-undefined-union', 'allow-string', 'allow-boolean-or-undefined',
