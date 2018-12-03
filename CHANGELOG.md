@@ -7,6 +7,8 @@ All notable changes to this project will be documented in this file.
   * `newline-per-chained-call`
   * `no-increment-decrement`
   * `no-null-keyword`
+* configured rules:
+  * `prefer-readonly`: activated, but allowes inline lambdas
 
 ## 0.1.3 - 2018-11-06
 * Added `enzyme` and `enzyme-adapter-react-16` to allowed implicit dependencies

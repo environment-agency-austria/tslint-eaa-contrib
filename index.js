@@ -14,6 +14,7 @@ const tslintRules = {
   'align': [true, 'arguments', 'statements', 'members', 'elements'],
   'no-unused-expression': [true, 'allow-fast-null-checks'],
   'prefer-method-signature': true,
+  "prefer-readonly": [true, "only-inline-lambdas"],
   'quotemark': [true, 'single', 'jsx-double'],
   'strict-boolean-expressions': [
     true, 'allow-undefined-union', 'allow-string', 'allow-boolean-or-undefined',
