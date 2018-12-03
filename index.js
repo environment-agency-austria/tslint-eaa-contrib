@@ -52,6 +52,7 @@ const tslintMicrosoftContribRules = {
   'mocha-avoid-only': false,
   'mocha-no-side-effect-code': false,
   'mocha-unneeded-done': false,
+  'no-increment-decrement': false,
 
   // [tslint-microsoft-contrib] - configure
   'export-name': true,

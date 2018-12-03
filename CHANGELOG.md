@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## Unreleased changes
+* deactivated rule `no-increment-decrement`
+
 ## 0.1.3 - 2018-11-06
 * Added `enzyme` and `enzyme-adapter-react-16` to allowed implicit dependencies
 * Made rule `no-suspicious-comment` a warning instead of an error by default
